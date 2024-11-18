@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Student Portal</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="icon/cloud-server.png" type="image/png">
+</head>
+
+<body>
+  <div class="background">
+    <form id="loginForm" action="/login" method="post" class="form-container">
+      <h3>Log In</h3>
+
+      <label for="email">Email</label>
+      <input type="email" placeholder="e.g. john-manalo@gmail.com" id="email" name="email" required
+        autocomplete="email">
+      <div id="emailError" class="error-message"></div>
+
+      <label for="password">Password</label>
+      <div class="password-toggle">
+        <input type="password" placeholder="e.g. Password123" id="password" name="password" class="styled-input"
+          required autocomplete="new-password">
+        <span id="togglePassword" class="password-toggle-icon">👁</span>
+      </div>
+      <div id="passwordError" class="error-message"></div>
+
+      <button type="submit" id="login">Log In</button>
+      <div id="formError" class="error-message"></div>
+
+      <div class="footer">
+        <a href="forgot-password.html">Forgot Password?</a>
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+      </div>
+    </form>
+  </div>
+
+  <script src="js/login.js"></script>
+</body>
+
+</html>

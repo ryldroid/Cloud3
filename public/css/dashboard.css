@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #2e2e2e, #1b1b1b);
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+}
+
+.dashboard-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.sidebar .brand h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffcc00;
+  margin-bottom: 40px;
+}
+
+hr {
+  border: 0;
+  border-top: 2px solid #ffcc00;
+}
+
+.sidebar nav ul {
+  list-style: none;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 20px;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #b3b3b3;
+  transition: color 0.3s ease;
+}
+
+.sidebar nav ul li a:hover {
+  color: #ffffff;
+}
+
+.main-content {
+  flex-grow: 1;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.navbar h2 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-grow: 1;
+}
+
+.overview {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  flex: 1;
+}
+
+.card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.card p {
+  color: #dcdcdc;
+  margin-bottom: 10px;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+.card li {
+  margin-bottom: 4px;
+}
+
+.progress-bar {
+  background: #444;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar .progress {
+  height: 100%;
+  background: linear-gradient(135deg, #ffcc00, #ff9900);
+}
+
+.files-section {
+  max-width: 100%;
+  overflow: hidden;
+  /* Prevents overflow beyond container */
+}
+
+.file-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* Allows items to wrap within the container */
+  max-width: 100%;
+  /* Prevents the grid from stretching beyond its parent */
+}
+
+.file-item {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 140px;
+  max-width: 100%;
+  /* Ensures item width stays within container */
+  word-wrap: break-word;
+  /* Breaks text to fit within boundaries */
+}
+
+
+.file-icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.upload-btn {
+  background: linear-gradient(135deg, #555, #333);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+}
+
+.upload-btn:hover {
+  background: linear-gradient(135deg, #444, #222);
+}

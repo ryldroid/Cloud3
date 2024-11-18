@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Storage Dashboard</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="icon" href="icon/cloud-server.png" type="image/png">
+</head>
+
+<body>
+  <div class="dashboard-container">
+    <div class="sidebar">
+      <div class="brand">
+        <h1>CloudSync</h1>
+
+      </div>
+      <nav>
+        <ul>
+          <hr>
+          <p>
+            <br><span id="userEmail"></span>
+          </p>
+          <br>
+          <li><a href="#files">My Files</a></li>
+          <li><a href="#upload">Upload Files</a></li>
+          <li><a href="#settings">Settings</a></li>
+          <li><a href="#" id="logoutLink">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="main-content">
+      <div class="navbar">
+        <h2>Welcome Back, User!</h2>
+      </div>
+
+      <div class="content">
+        <div class="overview">
+          <div class="card">
+            <h3>Storage Usage</h3>
+            <p>2.5 GB of 10 GB used</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 25%;"></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Recent Files</h3>
+            <ul>
+              <li>Document1.pdf</li>
+              <li>Photo1.jpg</li>
+              <li>Project.zip</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="files-section">
+          <h3>Your Files</h3>
+          <div class="file-grid">
+            <div class="file-item">
+              <div class="file-icon">📄</div>
+              <p>Document1.pdf</p>
+            </div>
+            <div class="file-item">
+              <div class="file-icon">🖼️</div>
+              <p>Photo1.jpg</p>
+            </div>
+            <div class="file-item">
+              <div class="file-icon">📁</div>
+              <p>Project.zip</p>
+            </div>
+          </div>
+          <button class="upload-btn">Upload New File</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+
+</html>

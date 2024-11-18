@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - Student Portal</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="icon/cloud-server.png" type="image/png">
+</head>
+
+<body>
+  <div class="background">
+    <form id="signupForm" action="/signup" method="post" class="form-container">
+      <h3>Create Account</h3>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="e.g. john-manalo@gmail.com" required>
+
+      <label for="password">New password</label>
+      <div class="password-toggle">
+        <input type="password" placeholder="e.g. Password123" id="password" name="password" class="styled-input"
+          required autocomplete="new-password">
+        <span id="togglePassword" class="password-toggle-icon">👁</span>
+      </div>
+
+      <label for="confirmPassword">Confirm new password</label>
+      <div class="password-toggle">
+        <input type="password" placeholder="e.g. Password123" id="confirmPassword" name="password" class="styled-input"
+          required autocomplete="new-password">
+        <span id="toggleConfirm" class="password-toggle-icon">👁</span>
+      </div>
+
+      <button type="submit">Sign Up</button>
+
+      <div class="footer">
+        <p>Already have an account? <a href="index.html">Log in</a></p>
+      </div>
+    </form>
+  </div>
+
+  <script src="js/signup.js"></script>
+</body>
+
+</html>
